@@ -203,7 +203,7 @@ def install_posix():
             spawn(cmd, search_path=False, verbose=1)
 
         shiboken_libs = [lib for lib in os.listdir(shiboken_path) if filter_match(
-                       lib, ["Qt*.so", "shiboken"])]
+                       lib, ["shiboken.so", "shiboken"])]
     elif sys.platform == 'darwin':
         shiboken_libs = [lib for lib in os.listdir(shiboken_path) if filter_match(
                        lib, ["*.so", "*.dylib", "shiboken"])]
