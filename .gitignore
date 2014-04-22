@@ -1,0 +1,12 @@
+/build
+/dist
+/shiboken_build
+/shiboken_package
+/shiboken_install
+/shiboken
+/shiboken-*.*.*
+/SciTE.*
+*.egg-info
+*.pyc
+distribute-*.egg
+distribute-*.tar.gz

@@ -1,0 +1,25 @@
+#
+# MANIFEST.in
+#
+# Manifest template for creating the Shiboken source distribution.
+
+include MANIFEST.in
+include CHANGES.rst
+include README.rst
+include ez_setup.py
+include setup.py
+include shiboken_postinstall.py
+include popenasync.py
+include qtinfo.py
+include utils.py
+
+# sources
+recursive-include sources/patchelf **
+recursive-include sources/shiboken **
+# ignore .git
+recursive-exclude sources/shiboken/.git **
+
+# Shiboken package
+recursive-include shiboken_package/Shiboken **
+recursive-include shiboken_package/Shiboken/docs **
+recursive-include shiboken_package/Shiboken/include **
