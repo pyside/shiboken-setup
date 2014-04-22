@@ -100,13 +100,13 @@ Building Shiboken distribution
 ------------------------------
 
 #. Download and extract `Shiboken source distribution
-   <https://pypi.python.org/packages/source/S/Shiboken/Shiboken-1.2.1.tar.gz>`_
+   <https://pypi.python.org/packages/source/S/Shiboken/Shiboken-1.2.2.tar.gz>`_
 
 #. Switch to the distribution directory:
 
    ::
 
-      c:\> cd Shiboken-1.2.1
+      c:\> cd Shiboken-1.2.2
 
 #. Build the `wheel` binary distribution:
 
@@ -133,7 +133,7 @@ Building Shiboken distribution from git repository
 
    ::
 
-      c:\> c:\Python27\python.exe setup.py bdist_wheel --version=1.2.1 --qmake=c:\Qt\4.8.5\bin\qmake.exe
+      c:\> c:\Python27\python.exe setup.py bdist_wheel --version=1.2.2 --qmake=c:\Qt\4.8.5\bin\qmake.exe
 
 #. To build the development version of ``Shiboken`` distribution, ignore the --version parameter:
 
@@ -148,7 +148,7 @@ Installing Shiboken distribution
    
    ::
 
-      c:\> c:\Python27\Scripts\pip install --use-wheel dist\Shiboken-1.2.1-cp27-none-win32.whl
+      c:\> c:\Python27\Scripts\pip install --use-wheel dist\Shiboken-1.2.2-cp27-none-win32.whl
 
 Installing Shiboken distribution into ``virtual`` Python environment
 --------------------------------------------------------------------
@@ -175,7 +175,7 @@ Installing Shiboken distribution into ``virtual`` Python environment
    
    ::
 
-      c:\> Scripts\pip install ..\dist\Shiboken-1.2.1-cp27-none-win32.whl
+      c:\> Scripts\pip install ..\dist\Shiboken-1.2.2-cp27-none-win32.whl
 
 Building Shiboken on a UNIX System (Ubuntu 12.04 - 14.04)
 =========================================================
@@ -213,19 +213,19 @@ Building Shiboken distribution
 
    ::
 
-      $ wget https://pypi.python.org/packages/source/S/Shiboken/Shiboken-1.2.1.tar.gz
+      $ wget https://pypi.python.org/packages/source/S/Shiboken/Shiboken-1.2.2.tar.gz
 
 #. Extract the source distribution:
 
    ::
 
-      $ tar -xvzf Shiboken-1.2.1.tar.gz
+      $ tar -xvzf Shiboken-1.2.2.tar.gz
 
 #. Switch to the distribution directory:
 
    ::
 
-      $ cd Shiboken-1.2.1
+      $ cd Shiboken-1.2.2
 
 #. Build the `wheel` binary distribution:
 
@@ -258,13 +258,13 @@ Building Shiboken distribution from git repository
 
    ::
 
-      $ python2.7 setup.py bdist_wheel --qmake=/usr/bin/qmake-qt4 --version=1.2.1
+      $ python2.7 setup.py bdist_wheel --qmake=/usr/bin/qmake-qt4 --version=1.2.2
 
 #. Optionally you can build standalone version of distribution with embedded Qt libs:
 
    ::
 
-      $ python2.7 setup.py bdist_wheel --qmake=/usr/bin/qmake-qt4 --version=1.2.1 --standalone
+      $ python2.7 setup.py bdist_wheel --qmake=/usr/bin/qmake-qt4 --version=1.2.2 --standalone
 
 #. To build the development version of ``Shiboken`` distribution, ignore the --version parameter:
 
@@ -279,7 +279,7 @@ Installing Shiboken distribution
    
    ::
 
-      $ sudo pip2.7 install dist/Shiboken-1.2.1-cp27-none-linux-x86_64.whl
+      $ sudo pip2.7 install dist/Shiboken-1.2.2-cp27-none-linux-x86_64.whl
 
 #. Run the post-install script to finish the package configuration:
    
@@ -312,7 +312,7 @@ Installing Shiboken distribution into ``virtual`` Python environment
    
    ::
 
-      $ bin/pip2.7 install ../dist/Shiboken-1.2.1-cp27-none-linux-x86_64.whl
+      $ bin/pip2.7 install ../dist/Shiboken-1.2.2-cp27-none-linux-x86_64.whl
 
 #. Run the post-install script to finish the package configuration:
    
