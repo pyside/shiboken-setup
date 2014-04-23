@@ -192,7 +192,7 @@ for pkg in ["shiboken_package/Shiboken"]:
     pkg_dir = os.path.join(script_dir, pkg)
     os.makedirs(pkg_dir)
 
-class pyside_install(_install):
+class shiboken_install(_install):
     def run(self):
         _install.run(self)
         # Custom script we run at the end of installing - this is the same script
@@ -216,7 +216,7 @@ class pyside_install(_install):
             ]
             run_process(cmd)
 
-class pyside_develop(_develop):
+class shiboken_develop(_develop):
 
     def __init__(self, *args, **kwargs):
         _develop.__init__(self, *args, **kwargs)
@@ -225,7 +225,7 @@ class pyside_develop(_develop):
         self.run_command("build")
         _develop.run(self)
 
-class pyside_bdist_egg(_bdist_egg):
+class shiboken_bdist_egg(_bdist_egg):
 
     def __init__(self, *args, **kwargs):
         _bdist_egg.__init__(self, *args, **kwargs)
@@ -234,7 +234,7 @@ class pyside_bdist_egg(_bdist_egg):
         self.run_command("build")
         _bdist_egg.run(self)
 
-class pyside_build_ext(_build_ext):
+class shiboken_build_ext(_build_ext):
 
     def __init__(self, *args, **kwargs):
         _build_ext.__init__(self, *args, **kwargs)
@@ -242,7 +242,7 @@ class pyside_build_ext(_build_ext):
     def run(self):
         pass
 
-class pyside_build(_build):
+class shiboken_build(_build):
 
     def __init__(self, *args, **kwargs):
         _build.__init__(self, *args, **kwargs)
@@ -777,11 +777,11 @@ setup(
     include_package_data = True,
     zip_safe = False,
     cmdclass = {
-        'build': pyside_build,
-        'build_ext': pyside_build_ext,
-        'bdist_egg': pyside_bdist_egg,
-        'develop': pyside_develop,
-        'install': pyside_install,
+        'build': shiboken_build,
+        'build_ext': shiboken_build_ext,
+        'bdist_egg': shiboken_bdist_egg,
+        'develop': shiboken_develop,
+        'install': shiboken_install,
     },
     
     # Add a bogus extension module (will never be built here since we are
