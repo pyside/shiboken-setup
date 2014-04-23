@@ -1,6 +1,32 @@
 Changes
 =======
 
+1.2.2 (2014-04-24)
+------------------
+
+Complete list of changes and bug fixes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Remove rejection lines that cause the sample_list test to fail
+- Remove protected from samblebinding test
+- Add parsing of 'noexcept' keyword
+- Fix function rejections (i.e. support overloads)
+- Fix building with python 3.3 and 3.4
+- Doc: Stop requiring sphinx.ext.refcounting with Sphinx 1.2+
+- Fix for containers with 'const' values
+- Fix compilation issue on OS X 10.9
+- Only use fields in PyTypeObject when defining types
+- Fix buffer overrun processing macro definitions
+- Fix 'special' include handling
+- Fix finding container base classes
+- Refactor and improve added function resolving
+- Work around MSVC's deficient <cmath> in libsample/transform.cpp
+- Fix description of sample/transform unit test
+- Change wrapping and indent of some code in Handler::startElement to
+  improve consistency
+- Fix '%#' substitution for # > 9
+- Improve dependencies for tests
+
 1.2.1 (2013-08-16)
 ------------------
 
