@@ -618,6 +618,10 @@ class shiboken_build(_build):
         elif sys.platform == 'darwin':
             so_ext = '.dylib'
             so_star = so_ext
+        makefile(
+            "{dist_dir}/Shiboken/__init__.py",
+            content="__all__ = ['shiboken']",
+            vars=vars)
         # <build>/shiboken/doc/html/* -> <setup>/Shiboken/docs/shiboken
         copydir(
             "{build_dir}/shiboken/doc/html",
@@ -661,6 +665,10 @@ class shiboken_build(_build):
                 recursive=False, vars=vars)
 
     def prepare_packages_win32(self, vars):
+        makefile(
+            "{dist_dir}/Shiboken/__init__.py",
+            content="__all__ = ['shiboken']",
+            vars=vars)
         pdbs = ['*.pdb'] if self.debug or self.build_type == 'RelWithDebInfo' else []       
         # <build>/shiboken/doc/html/* -> <setup>/Shiboken/docs/shiboken
         copydir(
