@@ -9,6 +9,12 @@ Introduction
 
 Shiboken generates bindings for C++ libraries using CPython source code.
 
+The Shiboken documentation is hosted at `http://pyside.github.io/docs/shiboken/
+<http://pyside.github.io/docs/shiboken/>`_.
+
+The Api Extractor documentation is hosted at `http://pyside.github.io/docs/api-extractor/
+<http://pyside.github.io/docs/api-extractor/>`_.
+
 Installation
 ============
 
