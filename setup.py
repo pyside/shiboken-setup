@@ -14,9 +14,12 @@ REQUIREMENTS:
 - Qt: 4.6, 4.7 and 4.8 is supported. Specify the path to qmake with --qmake option or add qmake to the system path.
 """
 
-__version__ = "1.2.2"
+__version__ = "1.3.0dev"
 
 submodules = {
+    '1.3.0dev': [
+        ["shiboken", "master"],
+    ],
     '1.2.2': [
         ["shiboken", "1.2.2"],
     ],
