@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Postinstall script for Shiboken
 #
 # This file is based on pywin32_postinstall.py file from pywin32 project
